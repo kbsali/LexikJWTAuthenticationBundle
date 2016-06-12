@@ -69,7 +69,7 @@
         <!-- JWT Security Authentication Entry Point -->
         <service id="lexik_jwt_authentication.security.authentication.entry_point" class="Lexik\Bundle\JWTAuthenticationBundle\Security\Http\EntryPoint\JWTEntryPoint" public="false"></service>
         <!-- JsonWebToken Authenticator -->
-        <service id="lexik_jwt_authentication.jwt_authenticator" class="Lexik\Bundle\JWTAuthenticationBundle\Security\Guard\JsonWebTokenAuthenticator">
+        <service id="lexik_jwt_authentication.security.guard.jwt_authenticator" class="Lexik\Bundle\JWTAuthenticationBundle\Security\Guard\JsonWebTokenAuthenticator">
             <argument type="service" id="lexik_jwt_authentication.encoder"/>
             <argument type="service" id="event_dispatcher"/>
         </service>
